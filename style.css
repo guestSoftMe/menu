@@ -1,0 +1,75 @@
+@import "nullStyle.css";
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  position: relative;
+}
+.block {
+  width: 100%;
+  color: #fff;
+  transform: translate(0);
+  transition: all 0.5s ease;
+}
+.red {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+}
+.green {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background-color: green;
+}
+.grey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: grey;
+  height: 100vh;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-size: 30px;
+  z-index: 3;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #fff;
+  transform: translate(-100%);
+  transition: all 0.5s ease;
+}
+.btn {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  position: absolute;
+  right: -40px;
+  top: 0;
+}
+.menu_head {
+}
+.menu_conct {
+}
+.menu_about {
+}
+.menu.active {
+  transform: translate(0);
+}
+.block.active {
+  transform: translate(10%);
+}
