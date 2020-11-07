@@ -3,6 +3,7 @@
   min-height: 100%;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 .block {
   width: 100%;
